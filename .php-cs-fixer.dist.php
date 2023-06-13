@@ -37,6 +37,7 @@ return (new PhpCsFixer\Config())
         'strict_comparison' => true,
         'strict_param' => true,
         'blank_line_between_import_groups' => false,
+        'no_superfluous_phpdoc_tags' => ['remove_inheritdoc' => false],
     ])
     ->setFinder($finder)
     ->setCacheFile(__DIR__.'/var/.php-cs-fixer.cache')
